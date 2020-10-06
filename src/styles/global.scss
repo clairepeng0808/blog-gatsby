@@ -227,7 +227,7 @@ a {
   line-height: 1.5;
   transition: all 0.4s;
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
   &:hover .post-link {
     color: var(--primary-color);
@@ -359,7 +359,12 @@ body.light {
   border-radius: 100px;
   box-shadow: inset 0 0 0 2px;
   border: 6px solid transparent;
+  &:hover {
+    color: var(--primary-color);
+    transform: scale(1.1);
+  }
 }
+
 .gg-sun::after,
 .gg-sun::before {
   content: "";
@@ -393,6 +398,11 @@ body.light {
   height: 20px;
   border: 2px solid;
   border-bottom-color: transparent;
+  &:hover {
+    color: var(--primary-color);
+    transform: scale(1.1);
+    transform: rotate(-135deg) scale(1.1);
+  }
 }
 .gg-moon::after {
   content: "";
